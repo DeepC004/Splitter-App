@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <!--==================== UNICONS ====================-->
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="styles.css" />
+
+        <title>Tip calculator app</title>
+    </head>
+    <body>
+        <div class="outer_container">
+            <div class="upper">
+                <p>S P L I</p>
+                <p>T T E R</p>
+            </div>
+            <div class="lower">
+                <div class="lower_left">
+                    <div class="left_inner bill_set">
+                        <label for="" class="text">Bill</label>
+                        <input type="text" id="bill" class="custom_input" />
+                    </div>
+                    <div class="left_inner">
+                        <label for="" class="text">Select Tip %</label>
+                        <div class="button_cover">
+                            <div class="input-radio">
+                                <input
+                                    type="radio"
+                                    class="percent"
+                                    id="5%"
+                                    name="number"
+                                    value="5"
+                                />
+                                <label for="5%">05%</label>
+                            </div>
+                            <div class="input-radio">
+                                <input
+                                    type="radio"
+                                    class="percent"
+                                    id="10%"
+                                    name="number"
+                                    value="10"
+                                />
+                                <label for="10%">10%</label>
+                            </div>
+                            <div class="input-radio">
+                                <input
+                                    type="radio"
+                                    name="number"
+                                    id="15%"
+                                    class="percent"
+                                    value="15"
+                                />
+                                <label for="15%">15%</label>
+                            </div>
+                            <div class="input-radio">
+                                <input
+                                    type="radio"
+                                    class="percent"
+                                    id="25%"
+                                    name="number"
+                                    value="25"
+                                />
+                                <label for="25%">25%</label>
+                            </div>
+                            <div class="input-radio">
+                                <input
+                                    type="radio"
+                                    name="number"
+                                    id="50%"
+                                    class="percent"
+                                    value="50"
+                                />
+                                <label for="50%">50%</label>
+                            </div>
+                            <div class="input-radio">
+                                <input
+                                    type="number"
+                                    name="number"
+                                    id="custom"
+                                    placeholder="Custom"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left_inner number_set">
+                        <label for="" class="text"
+                            >&nbsp;Number of People</label
+                        >
+                        <input type="text" id="people" class="custom_input" />
+                    </div>
+                </div>
+                <div class="lower_right" id="lower_right">
+                    <!-- <div class="right_upper">
+                        <div class="amount">
+                            <p>Tip Amount</p>
+                            <p>/person</p>
+                        </div>
+                        <div class="tip_per values" id="tip_per">#</div>
+                        <div class="total">
+                            <p>Total</p>
+                            <p>/person</p>
+                        </div>
+                        <div class="total_per values" id="total_per">#</div>
+                    </div>
+                    <button type="submit">RESET</button> -->
+                    <div class="tip_amount">
+                        <div class="tip_write">
+                            <p class="amt">Tip Amount</p>
+                            <p class="per">/ person</p>
+                        </div>
+                        <div id="tip_money">$0.00</div>
+                    </div>
+                    <div class="total_amount">
+                        <div class="total_write">
+                            <p class="amt">Total</p>
+                            <p class="per">/ person</p>
+                        </div>
+                        <div id="total_money">$0.00</div>
+                    </div>
+                    <button type="submit" class="reset" id="reset">
+                        RESET
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
